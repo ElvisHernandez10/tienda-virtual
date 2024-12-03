@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Avanzado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box" class="chat-box">
+            <!-- Aquí aparecerán los mensajes del chatbot -->
+        </div>
+        <input type="text" id="user-input" placeholder="Escribe un mensaje..." autofocus>
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+
+    <div id="loading" class="loading" style="display:none;">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

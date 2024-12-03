@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios y Calificación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comentarios y Calificación</h1>
+
+        <!-- Contenedor de las estrellas -->
+        <div class="rating-container">
+            <div class="stars">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+            </div>
+            <div id="rating-result">Tu calificación: 0 estrellas</div>
+            <button id="submit-rating" disabled>Enviar Calificación</button>
+        </div>
+
+        <!-- Sección para agregar un comentario -->
+        <h2>Deja un Comentario</h2>
+        <div class="comments-section">
+            <textarea id="comment" placeholder="Escribe tu comentario..."></textarea>
+            <button id="submit-comment" disabled>Enviar Comentario</button>
+        </div>
+
+        <!-- Comentarios Guardados -->
+        <h2>Comentarios de nuestros seguidores</h2>
+        <div id="saved-reviews"></div>
+
+        <!-- Comentarios Ficticios -->
+        <h2></h2>
+        <div id="fictitious-reviews"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

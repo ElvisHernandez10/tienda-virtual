@@ -1,0 +1,128 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y estructura general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    background-color: #f1f8f6; /* Fondo suave verde claro */
+    color: #444;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+header h1 {
+    font-size: 3rem;
+    color: #2E7D32; /* Verde más oscuro para título */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Descripción corta de la página */
+header p {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Título de sección de videos */
+.video-list h2 {
+    font-size: 2.5rem;
+    color: #2E7D32;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Contenedor de los videos */
+.videos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Adaptativo */
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Tarjetas de los videos */
+.video-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de hover en las tarjetas */
+.video-card:hover {
+    transform: translateY(-5px); /* Efecto de subida */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los videos */
+.video-card iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* Títulos de los videos */
+.video-card h3 {
+    font-size: 1.7rem;
+    color: #2E7D32;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Descripción de cada video */
+.video-card p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .video-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .video-list h2 {
+        font-size: 2rem;
+    }
+}
